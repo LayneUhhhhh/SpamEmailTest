@@ -12,8 +12,8 @@ public interface FileInput {
 
     public static List<String> loadEmails() {
 
-        String filePath = "emails.txt"; // Replace this with the actual file path
-
+        String filePath = "emails.txt"; // email list file path
+        
         //store strings
         List<String> lines = new ArrayList<>();
 

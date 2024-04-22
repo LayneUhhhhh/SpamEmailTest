@@ -18,7 +18,7 @@ public class EmailScheduler {
         targetTime.set(Calendar.SECOND, 0);
 
         if (targetTime.before(timeNow)) {
-            targetTime.add(Calendar.DAY_OF_MONTH, 1); // Schedule for the next day if the time has already passed
+            targetTime.add(Calendar.DAY_OF_MONTH, 1); //schedule for the next day if the time has already passed
         }
 
         //display scheduled time logic
@@ -34,6 +34,6 @@ public class EmailScheduler {
                 System.out.println(" at " + targetTime.getTime() + "\n");
             }
         },
-                targetTime.getTime(), 24 * 60 * 60 * 1000); // Repeat new email every day
+                targetTime.getTime(), 24 * 60 * 60 * 1000); //repeat new email every day
     }
 }
